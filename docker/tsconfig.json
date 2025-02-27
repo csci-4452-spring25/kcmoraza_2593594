@@ -1,0 +1,16 @@
+// https://nitro.unjs.io/guide/typescript
+{
+	"extends": "./.nitro/types/tsconfig.json",
+	"files": [],
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		},
+		{
+			"path": "./tsconfig.app.json"
+		}
+	]
+}
