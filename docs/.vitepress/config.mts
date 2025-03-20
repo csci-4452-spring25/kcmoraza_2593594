@@ -11,40 +11,12 @@ export default defineConfig({
             { text: 'Home', link: '/' },
             { text: 'Examples', link: '/api/examples' }
         ],
-        sidebar: [
-            {
-                text: 'Getting Started',
-                items: [
-                    { text: 'Installation', link: '/api/quickstart' },
-                    {
-                        text: 'REST API', items: [
-                            { text: 'Customers', link: '/api/customer' },
-                            { text: 'Businesses', link: '/api/business' },
-                            { text: 'Location', link: '/api/location' },
-                            { text: 'Status', link: '/api/status' }
-                        ]
-                    }
-                ],
-            }
-        ],
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/kgarchie' },
-            { icon: 'linkedin', link: 'https://www.linkedin.com/in/allan-bosire/' }
+            { icon: 'github', link: 'https://github.com/csci-4452-spring25/kcmoraza_2593594/' },
         ]
     },
     lang: 'en-US',
-    head: [
-        ['link', { rel: 'icon', href: 'https://raw.githubusercontent.com/kgarchie/jambo/main/docs/favicon.ico' }],
-        ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-QWXHWYF3Z6', async: 'async'}],
-        ['script', {}, `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-        
-            gtag('config', 'G-QWXHWYF3Z6');`
-        ]
-    ],
     ignoreDeadLinks: [
         // ignore exact url "/playground"
         '/playground',
