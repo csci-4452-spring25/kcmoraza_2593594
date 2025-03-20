@@ -59,7 +59,7 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
           text: 'Documentation deployment ${{ job.status }}'
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
         if: always()
 
   # Deployment job
